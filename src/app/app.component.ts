@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TweenLite, TweenMax, TimelineLite, TimelineMax, Power1, Power2, SlowMo} from "gsap";
+import { TweenLite, TweenMax, TimelineLite, TimelineMax, Power1, Power2, SlowMo, Power0} from "gsap";
 
 declare var jQuery: any;
 declare var $: any;
@@ -10,24 +10,15 @@ declare var $: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
   ngOnInit() {
     let tl = new TimelineMax({repeat:0,yoyo:true});
-    tl.staggerTo("h2", 0.2, {className:"+=superShadow", top:"-=10px", ease:Power1.easeIn}, 0.3, "start");
+    tl.staggerTo(".titleh2", 0.2, {className:"+=superShadow", top:"-=10px", ease:Power1.easeIn}, 0.3, "start");
+    tl.staggerTo("#titlep", 0.3, {className:"+=smallerShadow", ease:Power1.easeIn}, 0.3, "normal");
   }
 
   navigateButtonClick(e) {
     let $window = $(window);
-
-    // if (e.target.id == "p1nav") {
-    //   // TweenLite.to($window, 1, {scrollTo: {y:"#p1", offsetY:70}});
-    //   console.log("works");
-    // } else if (e.target.id == "p2nav") {
-    //   solutionsT1.to(window, 1, {scrollTo: {y:"#p2", offsetY:70}});
-    //   console.log("works");
-    // } else if(e.target.id == "p3nav") {
-    //   TweenLite.to($window, 1, {scrollTo: {y:"#p1", offsetY:70}});
-    //   console.log("works");
-
     if (e.target.id == "p1nav") {
       let element = document.getElementById("p1");
       let alignWithTop = true;
