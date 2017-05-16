@@ -73,11 +73,11 @@ strong {
   font-weight: bold;
   color: white;
   margin-left: 30vw;
+  background: none;
   /*margin-top: 5vh;*/
 }
 
 #p1 {
-  background-color: white;
   width: 100vw;
   height: 100vh;
 }
@@ -111,6 +111,16 @@ strong {
   font-family: 'Cutive Mono', monospace;
 }
 
+#sun {
+  position: absolute;
+  width: 50%;
+  top: 1%;
+  left: 50vh;
+  opacity: .8;
+  filter: blur(3px);
+  z-index: -1;
+}
+
 #titlep {
   font-size: 15px;
   color: white;
@@ -118,4 +128,5 @@ strong {
   font-family: sans-serif;
   margin-left: 40vw;
   padding: 15px;
+  background: none;
 }

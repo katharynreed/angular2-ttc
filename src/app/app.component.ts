@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
     let tl = new TimelineMax({repeat:0,yoyo:true});
     tl.staggerTo(".titleh2", 0.2, {className:"+=superShadow", top:"-=10px", ease:Power1.easeIn}, 0.3, "start");
     tl.staggerTo("#titlep", 0.3, {className:"+=smallerShadow", ease:Power1.easeIn}, 0.3, "normal");
+    tl.staggerTo("$sun", 0.4, {rotation: 45, ease:Power2.easeIn}, 0.3, "start");
   }
 
   navigateButtonClick(e) {
