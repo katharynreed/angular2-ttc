@@ -6,7 +6,7 @@
 
 <div id="story-content">
 
-  <div (click)='onToggle()' id="p1">
+  <div id="p1">
     <img id="sun" src="./../assets/sun.png"/>
     <h2 class="titleh2">The</h2>
     <h2 class="titleh2">Things</h2>
@@ -15,21 +15,17 @@
     <h2 id="titlep">adapted from the novel by Tim O'Brien</h2>
   </div>
 
-  <div id="p2">
-    <h1>test</h1>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+  <div id="p2" (mouseover)="hoverInit($event)" (mouseoff)="hoverOff($event)">
+    <img id="part1" src="./assets/test/part1.png" alt="" />
+    <img id="part2" src="./assets/test/part2.png" alt="" />
+    <h1 id=part6><span id="elip1">.</span><span id="elip2">.</span><span id="elip3">.</span></h1>
+    <img id="part3" src="./assets/test/part3.png" alt="" />
   </div>
 
-  <div id="p3">
-    <h1>test</h1>
+  <div id="p3" (mouseover)="hoverInit($event)">
+    <img id="part4" src="./assets/test/part4.png" alt="" />
+    <img id="part7" src="./assets/test/part7.png" alt="" />
+    <img id="part8" src="./assets/test/part8.png" alt="" />
     <br>
     <br>
     <br>
